@@ -18,9 +18,11 @@
       <header>
         <h1>Gymnastic</h1>
         <nav>
-          <a href="#">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="#">Contact Us</a>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
         </nav>
       </header>
 
@@ -36,14 +38,25 @@
         </p>
         <button class="btn-get-mem">Get Membership</button>
       </main>
+
       <section class="follow-us">
         <h2 class="follow-us-title">Follow us on</h2>
 
-        <button class="btn-inst">Instagram</button>
-        <button class="btn-face">Facebook</button>
-        <button class="btn-you">YouTube</button>
+        <button class="btn-inst">
+          <a href="https://www.instagram.com/">Instagram</a>
+        </button>
+
+        <button class="btn-face">
+          <a href="https://en-gb.facebook.com/">Facebook</a>
+        </button>
+
+        <button class="btn-you">
+          <a href="https://www.youtube.com/">YouTube</a>
+        </button>
       </section>
+
       <section class="testimonial">
+        <!-- This section is lacking a heading element -->
         <figure>
           <blockquote>
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -55,12 +68,12 @@
           <cite class="company">KBC</cite>
         </figure>
       </section>
-      <footer class="footer-list">
+      <footer>
         <h3 class="popular-ftr">Popular Features</h3>
 
-        <ul class="footer-list">
+        <ul>
           <li>Gyms Near Me</li>
-          <ul class="footer-list">
+          <ul>
             <li>Gyms in London</li>
             <li>Gyms in London</li>
             <li>Gyms in London</li>

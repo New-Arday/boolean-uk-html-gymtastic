@@ -3,51 +3,58 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+:root {
+  --accent-color: #0b7285;
+}
+:root {
+  --main-bg-color: #e7f5ff;
+}
+:root {
+  --btn-font-color: #e3fafc;
+}
 body {
   font-family: "Inter", sans-serif;
 }
 
 .container {
-  width: 60%;
+  width: 70%;
   height: 100%;
-  background-color: aliceblue;
-  margin-right: auto;
-  margin-left: auto;
+  background-color: var(--main-bg-color);
+  margin: 0 auto;
   margin-top: 40px;
 }
 header {
-  background-color: #0b7285;
+  background-color: var(--accent-color);
   color: #e3fafc;
-  margin-top: 20px;
-  height: 50px;
+  height: 70px;
 }
 h1 {
-  letter-spacing: 2px;
-  font-weight: bold;
-  text-align-last: left;
-  font-size: 18px;
-}
-h1,
-nav {
   display: inline-block;
-  margin-top: 18px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
   margin-left: 20px;
 }
-
-nav a {
-  text-decoration: none;
-  padding-left: 50px;
-  color: #e3fafc;
-  font-size: 16px;
+nav,
+ul,
+li {
+  display: inline-block;
+  margin-left: 20px;
 }
 nav a:hover {
   color: coral;
 }
+nav a {
+  text-decoration: none;
+  color: #e3fafc;
+}
+
 p {
-  line-height: 25px;
+  line-height: 20px;
   margin-bottom: 10px;
 }
+
 main,
 section {
   padding-left: 7%;
@@ -56,26 +63,30 @@ section {
 }
 
 h2 {
-  color: #0b7285;
+  color: var(--accent-color);
   font-weight: bold;
   font-size: 30px;
   margin-bottom: 20px;
 }
 .fitness-title,
 .pop-features {
-  color: #0b7285;
+  color: var(--accent-color);
   font-weight: bold;
   font-size: 30px;
   margin-bottom: 20px;
   margin-top: 40px;
 }
 span {
-  color: #0b7285;
+  color: var(--accent-color);
   font-weight: bold;
   font-size: 18px;
 }
 /* Follow us section */
 .follow-us {
+}
+.follow-us a {
+  text-decoration: none;
+  color: var(--btn-font-color);
 }
 button {
   padding-top: 10px;
@@ -84,14 +95,23 @@ button {
   padding-right: 20px;
   border-radius: 10px;
   margin-right: 20px;
-  color: #e3fafc;
 }
+
+button:hover {
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
 .btn-get-mem {
   background-color: #fff;
   border: solid orange 2px;
   margin-top: 10px;
   margin-bottom: 22px;
   color: #e67700;
+}
+
+.btn-get-mem:hover {
+  color: var(--btn-font-color);
 }
 
 .btn-inst {
@@ -109,19 +129,15 @@ button {
   margin-bottom: 20px;
 }
 
-footer,
-.footer-list {
-  background-color: #0b7285;
+footer {
+  background-color: var(--accent-color);
   color: #e3fafc;
   padding-left: 20px;
-  list-style: none;
 }
 
-.testimonial {
-}
 .author,
 .company {
-  color: #0b7285;
+  color: var(--accent-color);
   font-weight: 500;
 }
 
@@ -138,16 +154,14 @@ blockquote,
   height: 50%;
   margin-bottom: 0;
 }
-/* .pop-features {
-  padding-left: 7%;
-} */
+
 .card-title {
   font-size: 30px;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 40px;
   font-weight: bold;
-  color: #0b7285;
+  color: var(--accent-color);
 }
 .cards {
   display: flex;
@@ -161,14 +175,13 @@ blockquote,
   border-radius: 20px;
   background-color: #dee2e6;
   padding: 10px;
-  color: #0b7285;
+  color: var(--accent-color);
 }
 .gyms-in {
   font-size: 20px;
-  color: #212529;
   font-weight: 500;
   font-style: italic;
   margin-top: 20px;
   margin-bottom: 28px;
-  color: #0b7285;
+  color: var(--accent-color);
 }
